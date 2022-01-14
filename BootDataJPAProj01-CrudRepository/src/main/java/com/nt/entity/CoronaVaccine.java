@@ -21,6 +21,7 @@ import lombok.RequiredArgsConstructor;
 @NoArgsConstructor
 @RequiredArgsConstructor
 public class CoronaVaccine implements Serializable {
+	//need to test for merger
 	@Id  //To make  property as singulr ID property and to map with singular PK column
 	//@Column(name="regNo") optional if want to take property name as the column name
 	//generationg values based on genration type
