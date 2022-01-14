@@ -23,6 +23,7 @@ import lombok.RequiredArgsConstructor;
 public class CoronaVaccine implements Serializable {
 	@Id  //To make  property as singulr ID property and to map with singular PK column
 	//@Column(name="regNo") optional if want to take property name as the column name
+	//generationg values based on genration type
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private  Long regNo;
 	@NonNull
