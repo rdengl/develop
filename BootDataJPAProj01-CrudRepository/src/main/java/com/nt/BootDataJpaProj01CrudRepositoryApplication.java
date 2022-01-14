@@ -11,7 +11,7 @@ import com.nt.service.ICoronaVaccineMgmtService;
 
 @SpringBootApplication
 public class BootDataJpaProj01CrudRepositoryApplication {
-
+//checking for test
 	public static void main(String[] args) {
 		//get Access to IOC container
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);

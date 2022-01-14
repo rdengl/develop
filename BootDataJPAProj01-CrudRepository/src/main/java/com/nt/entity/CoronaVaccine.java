@@ -30,6 +30,8 @@ public class CoronaVaccine implements Serializable {
 	@NonNull
 	@Column(length = 20)
 	private  String name;
+	//test command for merge
+
 	@NonNull
 	@Column(length = 20)
 	private  String company;
