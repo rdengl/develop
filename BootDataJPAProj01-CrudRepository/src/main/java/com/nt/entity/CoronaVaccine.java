@@ -21,10 +21,8 @@ import lombok.RequiredArgsConstructor;
 @NoArgsConstructor
 @RequiredArgsConstructor
 public class CoronaVaccine implements Serializable {
-	//need to test for merger
 	@Id  //To make  property as singulr ID property and to map with singular PK column
 	//@Column(name="regNo") optional if want to take property name as the column name
-	//generationg values based on genration type
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private  Long regNo;
 	@NonNull
@@ -33,6 +31,7 @@ public class CoronaVaccine implements Serializable {
 	@NonNull
 	@Column(length = 20)
 	private  String company;
+	//not null comment added 
 	@NonNull
 	@Column(length = 20)
 	private  String country;
