@@ -26,6 +26,7 @@ public class CoronaVaccine implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private  Long regNo;
 	@NonNull
+	//column lenth must be 2o chars
 	@Column(length = 20)
 	private  String name;
 	@NonNull
