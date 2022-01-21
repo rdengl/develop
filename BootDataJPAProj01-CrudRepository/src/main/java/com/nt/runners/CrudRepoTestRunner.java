@@ -21,7 +21,7 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		
+		 System.out.println("========================= Entered in Run() ===============================");
 		 try {
 		// Bulk insertion/batch insertion
 			 Iterable<CoronaVaccine> listVaccines= service.registerInBatch(List.of(new CoronaVaccine("sputnik1", "Russie","Russia",527.8, 2),
