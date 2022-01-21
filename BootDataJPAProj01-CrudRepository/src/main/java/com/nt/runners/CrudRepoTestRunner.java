@@ -28,15 +28,15 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 				                                                                                                         new CoronaVaccine("pyzer1", "pyzer","USA",648.8, 2),
 				                                                                                                         new CoronaVaccine("moderena1", "moderena","USA",415.8, 2)
 				                                                                                                        ));
-			 
+
 			 /*Iterable<CoronaVaccine> listVaccines= service.registerInBatch(Arrays.asList(new CoronaVaccine("sputnik", "Russie","Russia",567.8, 2),
                                                                                                                                                 new CoronaVaccine("pyzer", "pyzer","USA",678.8, 2),
                                                                                                                                                 new CoronaVaccine("moderena", "moderena","USA",455.8, 2)
                                                                                                                              ));
-			 
+
 		   System.out.println("The regNos are ");
 		   listVaccines.forEach(vaccine->System.out.println(vaccine.getRegNo())); */
-		 } 
+		 }
 		 catch(DataAccessException dae) {
 			 dae.printStackTrace();
 		 }
@@ -46,13 +46,13 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 				 catch(DataAccessException dae) {
 					 dae.printStackTrace();
 				 }
-				 
+
 				 try {
 					 System.out.println("21 regNo vaccine avaiable? ::"+service.checkVaccineAvailabilityByRegNo(21));
 					 }
 					 catch(DataAccessException dae) {
 						 dae.printStackTrace();
-					 }
+					 }*/
 				/*try {
 				  System.out.println("==============findAll()=====================");
 				   Iterable<CoronaVaccine> itList=service.fetchAllDetails();
@@ -128,7 +128,7 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 				*/
 
 
-        //invoke methods
+		 //invoke methods
 			/*try {
 			   	//create Entity class obj
 				CoronaVaccine vaccine=new CoronaVaccine("covishield","Serum","india",500.0,2);
@@ -175,6 +175,6 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 			   }*/
 
 
-    }
+	}
 
 }
