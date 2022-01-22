@@ -36,8 +36,7 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 			catch(Exception e) {
 				e.printStackTrace();
 			}
-			//now conflict will come
-			//close container
+			//======================================//======================
 			((ConfigurableApplicationContext) ctx).close();*/
 	}
 
