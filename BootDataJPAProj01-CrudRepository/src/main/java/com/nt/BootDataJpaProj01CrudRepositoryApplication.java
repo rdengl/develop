@@ -16,9 +16,9 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 			ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 				/*	//get Service class obj
 		//===================//===============
-		//added new change for now
+		//added new changes for checking left and right
 		//===================//===============
-		// use rebase for rebase test
+		//kept in that
 		// now checking from local using rebase
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 		//added from Git repository
@@ -40,7 +40,7 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 				e.printStackTrace();
 			}
 			((ConfigurableApplicationContext) ctx).close();*/
-		//end of try catch
+		
 	}
 
 }
