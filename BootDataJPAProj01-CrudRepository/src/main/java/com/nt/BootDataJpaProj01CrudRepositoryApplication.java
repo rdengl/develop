@@ -18,8 +18,8 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 		//===================//===============
 		//added new changes for checking left and right
 		//===================//===============
-		//kept in that
-		// now checking from local using rebase
+		
+		// check now right
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 		//added from Git repository
 		/*	//get Service class obj
