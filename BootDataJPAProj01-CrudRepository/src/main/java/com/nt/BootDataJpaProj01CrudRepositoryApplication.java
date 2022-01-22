@@ -15,6 +15,7 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 	public static void main(String[] args) {
 		//get Access to IOC container
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
+		//added from Git repository
 		/*	//get Service class obj
 			ICoronaVaccineMgmtService  service=ctx.getBean("vaccineMgmtService",ICoronaVaccineMgmtService.class);
 			 //invoke methods
