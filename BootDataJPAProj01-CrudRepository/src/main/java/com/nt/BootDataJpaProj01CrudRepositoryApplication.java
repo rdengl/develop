@@ -13,16 +13,14 @@ import com.nt.service.ICoronaVaccineMgmtService;
 public class BootDataJpaProj01CrudRepositoryApplication {
 //checking for test
 	public static void main(String[] args) {
-		//get Access to IOC container
-		//added local changes
+			ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
+				/*	//get Service class obj
 		//added new change for now
-		//aded for test merge
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 		//added from Git repository
 		/*	//get Service class obj
 			ICoronaVaccineMgmtService  service=ctx.getBean("vaccineMgmtService",ICoronaVaccineMgmtService.class);
 			 //invoke methods
-			 //added changes for merge
 			try {
 			   	//create Entity class obj
 				//CoronaVaccine vaccine=new CoronaVaccine(null,"covaxin","Bharat-BioTech","india",234.0,3);
@@ -37,7 +35,6 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 			catch(Exception e) {
 				e.printStackTrace();
 			}
-			//======================================//======================
 			((ConfigurableApplicationContext) ctx).close();*/
 	}
 
