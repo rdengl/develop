@@ -14,6 +14,8 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 //checking for test
 	public static void main(String[] args) {
 		//get Access to IOC container
+		//added local changes
+		//aded for test merge
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 		//added from Git repository
 		/*	//get Service class obj
