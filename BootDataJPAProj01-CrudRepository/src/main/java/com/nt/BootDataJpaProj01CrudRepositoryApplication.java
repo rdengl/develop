@@ -18,6 +18,7 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 		/*	//get Service class obj
 			ICoronaVaccineMgmtService  service=ctx.getBean("vaccineMgmtService",ICoronaVaccineMgmtService.class);
 			 //invoke methods
+			 //added changes for merge
 			try {
 			   	//create Entity class obj
 				//CoronaVaccine vaccine=new CoronaVaccine(null,"covaxin","Bharat-BioTech","india",234.0,3);
