@@ -18,7 +18,7 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 		//===================//===============
 		//added new change for now
 		//===================//===============
-
+		// now using pull merge for test
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 		//added from Git repository
 		/*	//get Service class obj
