@@ -16,27 +16,27 @@ import com.nt.service.ICoronaVaccineMgmtService;
 
 @Component
 public class CrudRepoTestRunner implements CommandLineRunner {
-	@Autowired
-	private  ICoronaVaccineMgmtService  service;
+    @Autowired
+    private ICoronaVaccineMgmtService service;
 
 	@Override
 	public void run(String... args) throws Exception {
-		
+		 System.out.println("========================= Entered in Run() ===============================");
 		 try {
 		// Bulk insertion/batch insertion
 			 Iterable<CoronaVaccine> listVaccines= service.registerInBatch(List.of(new CoronaVaccine("sputnik1", "Russie","Russia",527.8, 2),
 				                                                                                                         new CoronaVaccine("pyzer1", "pyzer","USA",648.8, 2),
 				                                                                                                         new CoronaVaccine("moderena1", "moderena","USA",415.8, 2)
 				                                                                                                        ));
-			 
+
 			 /*Iterable<CoronaVaccine> listVaccines= service.registerInBatch(Arrays.asList(new CoronaVaccine("sputnik", "Russie","Russia",567.8, 2),
                                                                                                                                                 new CoronaVaccine("pyzer", "pyzer","USA",678.8, 2),
                                                                                                                                                 new CoronaVaccine("moderena", "moderena","USA",455.8, 2)
                                                                                                                              ));
-			 
+
 		   System.out.println("The regNos are ");
 		   listVaccines.forEach(vaccine->System.out.println(vaccine.getRegNo())); */
-		 } 
+		 }
 		 catch(DataAccessException dae) {
 			 dae.printStackTrace();
 		 }
@@ -46,7 +46,7 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 				 catch(DataAccessException dae) {
 					 dae.printStackTrace();
 				 }
-				 
+
 				 try {
 					 System.out.println("21 regNo vaccine avaiable? ::"+service.checkVaccineAvailabilityByRegNo(21));
 					 }
@@ -126,8 +126,8 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 				         CoronaVaccine vaccine3=service.fetchVaccineById(12L).orElseGet(()-> new CoronaVaccine());
 				          System.out.println(vaccine3);
 				*/
-		             
-		
+
+
 		 //invoke methods
 			/*try {
 			   	//create Entity class obj
@@ -173,7 +173,7 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 			   catch(DataAccessException dae) {
 				   dae.printStackTrace();
 			   }*/
-		
+
 
 	}
 

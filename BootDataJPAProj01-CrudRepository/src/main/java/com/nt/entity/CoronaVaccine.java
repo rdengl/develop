@@ -29,9 +29,12 @@ public class CoronaVaccine implements Serializable {
 	//column lenth must be 2o chars
 	@Column(length = 20)
 	private  String name;
+	//test command for merge
+
 	@NonNull
 	@Column(length = 20)
 	private  String company;
+	//not null comment added 
 	@NonNull
 	@Column(length = 20)
 	private  String country;
