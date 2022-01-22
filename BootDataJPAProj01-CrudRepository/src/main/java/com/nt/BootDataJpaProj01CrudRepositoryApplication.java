@@ -13,7 +13,6 @@ import com.nt.service.ICoronaVaccineMgmtService;
 public class BootDataJpaProj01CrudRepositoryApplication {
 //checking for test
 	public static void main(String[] args) {
-		//added form git repo
 		//get Access to IOC container
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 		/*	//get Service class obj
