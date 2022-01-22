@@ -18,7 +18,7 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 		//===================//===============
 		//added new change for now
 		//===================//===============
-		//aded by Ram from git
+		//aded for checking merge
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 		//added from Git repository
 		/*	//get Service class obj
