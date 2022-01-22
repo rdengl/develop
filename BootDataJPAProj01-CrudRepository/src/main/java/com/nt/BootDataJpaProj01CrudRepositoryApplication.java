@@ -18,7 +18,7 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 		//===================//===============
 		//added new change for now
 		//===================//===============
-		//aded by Ram from git
+		//aded by me form local
 		ApplicationContext ctx=SpringApplication.run(BootDataJpaProj01CrudRepositoryApplication.class, args);
 		//added from Git repository
 		/*	//get Service class obj
