@@ -30,6 +30,7 @@ public class BootDataJpaProj01CrudRepositoryApplication {
 				System.out.println(service.registerVaccine(vaccine));
 			}
 			catch(DataAccessException dae) {
+			System.out.println("printing stack");
 				dae.printStackTrace();
 			}
 			catch(Exception e) {
